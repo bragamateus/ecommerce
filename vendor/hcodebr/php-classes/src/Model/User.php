@@ -59,4 +59,8 @@ class User extends Model{
         }
 
     }
+
+    public static function logout(){
+        $_SESSION[User::SESSION] = NULL;
+    }
 }

@@ -17,7 +17,7 @@ class Model
         // TODO: Implement __call() method.
 
         $method = substr($name, 0, 3);
-        $fieldName = substr($name, strlen($name));
+        $fieldName = substr($name, 3, strlen($name));
 
         switch ($method) {
             case "get":
